@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    {% endblock %}
+<div class="container">
+    <form>
+        <div class="form-group">
+          <label for="formGroupExampleInput"></label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2"></label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+          <button class="btn btn-primary btn-sm" id="bb" onclick="valid()">Enter</button>
+        </div>
+        
+      </form>
+</div>
+<img src="" id="vv" alt="">
+<div class="container" id="sly"></div>
+{% block script %}
+<script type="text/javascript" src="static/js/home.js"></script>
+{% endblock %}
+{% endblock %}

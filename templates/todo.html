@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/todo.css') }}">
+    {% endblock %}
+<div class="container" id="con">
+    <div class="ui form" id="former">
+        <div class="fields">
+          <div class="field">
+            <label>Bill</label>
+            <input id="in1" type="text" placeholder="Bill">
+          </div>
+          <div class="field">
+            <label>No of people</label>
+            <input id="in2" type="text" placeholder="People">
+          </div>
+          <div class="field">
+            <label>Class</label>
+            <select id="sele" class="ui dropdown">
+                <option disabled selected value="0">-- Choose an Option --</option>
+                <option value="0.3">30&#37; &#45; Outstanding</option>
+                <option value="0.2">20&#37; &#45; Good</option>
+                <option value="0.15">15&#37; &#45; It was OK</option>
+                <option value="0.1">10&#37; &#45; Bad</option>
+                <option value="0.05">5&#37; &#45; Terrible</option>
+              </select>
+            <a id="mov">
+            <button id="bt1" onclick="add2()" class="ui primary button">
+                Calculate
+              </button>
+              </a>
+          </div>
+        </div>
+      </div>
+      <div class="ui items" id="lo">
+        <div class="item">
+          <div class="ui small image">
+            <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+          </div>
+          <div class="content">
+            <div class="header">Bill</div>
+            <div class="meta">
+              <span class="price" id="divi"></span>
+              <span class="stay"></span>
+            </div>
+            <div class="description">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<img src="" id="vv" alt="">
+<div class="container" id="sly">
+    <button class="btn btn-primary" onclick="test()">Start</button>
+</div>
+{% block script %}
+<script type="text/javascript" src="static/js/todo.js"></script>
+{% endblock %}
+{% endblock %}
