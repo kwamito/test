@@ -1,0 +1,38 @@
+body{
+    background-image: url('https://images.pexels.com/photos/2533092/pexels-photo-2533092.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+}
+
+#con, #cona{
+    width: 300px;
+    height: 50px;
+    margin-left: 30%;
+    margin-bottom: 300px;
+}
+
+#in1, #in2{
+    width: 200px;
+}
+#mov{
+    margin-top: 20px;
+    margin-right: 90px;
+}
+#bt1{
+    margin-bottom: 90px;
+}
+@media only screen and (max-width: 600px) {
+    #con, #cona{
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    #in1, #in2{
+        width: auto;
+    }
+    
+  }
+  .divi{
+      margin-bottom: 500px;
+  }
+  #lists{
+    margin-left: 40px;
+}
